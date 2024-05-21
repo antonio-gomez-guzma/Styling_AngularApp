@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
           <em>For Modern Angular Applications</em>
       </header>
       <div>
-          <saa-app-nav></saa-app-nav>
+          <saa-app-nav class="example"></saa-app-nav>
       </div>
   `,
   styles: [`
