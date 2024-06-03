@@ -5,8 +5,7 @@ export class TooltipMessageDirective {}
 
 @Component({
     selector: 'saa-tooltip',
-    templateUrl: './tooltip.component.html',
-    styleUrls: ['./tooltip.component.scss']
+    templateUrl: './tooltip.component.html'
 })
 
 export class ToolTipComponent { }

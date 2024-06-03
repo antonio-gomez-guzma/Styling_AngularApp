@@ -1,17 +1,17 @@
-@use '../../../scss/root/colors';
+@use 'colors';
 
 
 
 
-:host {
+.tooltip {
     border-bottom: dotted 1px #8a8a8a;
     cursor: help;
     font-weight: bold;
     position: relative;
 }
 
-.tooltip {
-    background-color: colors.$g-root__color--primary--03a;
+.tooltip__popup {
+    background-color: colors.$color__primary--03a;
     border-radius: 0;
     color: white;
     font-size: 75%;
@@ -29,10 +29,10 @@
     z-index: 1;
 }
 
-.tooltip::before {
+.tooltip__popup::before {
     border: inset 0.75rem;
     border-bottom-style: solid;
-    border-color: transparent transparent colors.$g-root__color--primary--03a;
+    border-color: transparent transparent colors.$color__primary--03a;
     border-top-width: 0;
     bottom: 100%;
     content: "";
@@ -45,7 +45,7 @@
 }
 
 // Opened
-:host:hover .tooltip {
+.tooltip:hover .tooltip__popup {
     opacity: 1;
     pointer-events: all;
 }

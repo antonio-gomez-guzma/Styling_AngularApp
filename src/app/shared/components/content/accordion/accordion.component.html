@@ -1,13 +1,13 @@
-<ul class="items">
+<ul class="accordion">
     <li 
         *ngFor="let item of items; let i = index"
-        class="item"
-        [class.item--active]="activeIndex === i">
+        class="accordion__item"
+        [class.accordion__item--active]="activeIndex === i">
         <a 
             (click)="selectItem(i)"
-            class="item__label"
-            [class.item__label--active]="activeIndex === i">
-            <span class="item__label-text">
+            class="accordion__label"
+            [class.accordion__label--active]="activeIndex === i">
+            <span class="accordion__label-text">
                 {{item.title}}
             </span>
         </a>

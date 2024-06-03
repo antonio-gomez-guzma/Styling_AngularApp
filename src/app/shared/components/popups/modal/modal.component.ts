@@ -5,8 +5,7 @@ export class ModalContentDirective {}
 
 @Component({
   selector: 'saa-modal',
-  templateUrl: './modal.component.html',
-  styleUrls: ['./modal.component.scss']
+  templateUrl: './modal.component.html'
 })
 
 export class ModalComponent {
