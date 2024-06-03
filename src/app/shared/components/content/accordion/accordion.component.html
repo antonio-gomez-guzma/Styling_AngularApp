@@ -2,11 +2,11 @@
     <li 
         *ngFor="let item of items; let i = index"
         class="item"
-        [class.item--active]="activeIndex === i">
+        [ngClass]="activeIndex === i ? 'item--active' : 'item--inactive'">
         <a 
             (click)="selectItem(i)"
             class="item__label"
-            [class.item__label--active]="activeIndex === i">
+            [ngClass]="activeIndex === i ? 'item__label--active' : 'item__label--inactive'">
             <span class="item__label-text">
                 {{item.title}}
             </span>
